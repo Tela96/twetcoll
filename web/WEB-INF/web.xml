@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>TweetHandlerServlet</servlet-name>
+        <servlet-class>TweetHandlerServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TransactionHandlerServlet</servlet-name>
+        <servlet-class>TransactionHandlerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TweetHandlerServlet</servlet-name>
+        <url-pattern>/tweets</url-pattern>
+        <url-pattern>/seetweets</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>TransactionHandlerServlet</servlet-name>
+        <url-pattern>/success</url-pattern>
+    </servlet-mapping>
+</web-app>
